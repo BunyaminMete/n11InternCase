@@ -61,12 +61,12 @@
 		0B894E5F2C5B8BD200542E3B /* n11_cloneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B894E5E2C5B8BD200542E3B /* n11_cloneAppTests.swift */; };
 		0B894E692C5B8BD200542E3B /* n11_cloneAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B894E682C5B8BD200542E3B /* n11_cloneAppUITests.swift */; };
 		0B894E6B2C5B8BD200542E3B /* n11_cloneAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B894E6A2C5B8BD200542E3B /* n11_cloneAppUITestsLaunchTests.swift */; };
+		0B8BE1642C9C57CA00EF821A /* HomeModuleConceptImageHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8BE1632C9C57CA00EF821A /* HomeModuleConceptImageHeaderReusableView.swift */; };
 		0B9BB20E2C89A2F1001F5FB2 /* Label+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BB20D2C89A2F1001F5FB2 /* Label+Padding.swift */; };
 		0B9BB2132C89DF77001F5FB2 /* MapViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BB2122C89DF77001F5FB2 /* MapViewManager.swift */; };
 		0B9BB2152C89FB6E001F5FB2 /* ShortcutViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BB2142C89FB6E001F5FB2 /* ShortcutViewContainer.swift */; };
 		0BA438532C668A2300486E41 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA438522C668A2300486E41 /* BottomView.swift */; };
 		0BA438552C67782500486E41 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA438542C67782500486E41 /* PageControl.swift */; };
-		0BA4386E2C68D86000486E41 /* HomeModuleConceptImageHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA4386D2C68D86000486E41 /* HomeModuleConceptImageHeaderReusableView.swift */; };
 		0BA438772C692B1800486E41 /* HomeModuleConceptBottomBrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA438752C692B1800486E41 /* HomeModuleConceptBottomBrandCell.swift */; };
 		0BABE6362C903B7D00B746D2 /* FirestoreNetworkFavourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BABE6352C903B7D00B746D2 /* FirestoreNetworkFavourites.swift */; };
 		0BABE6392C903BB400B746D2 /* FavouritesProductPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BABE6382C903BB400B746D2 /* FavouritesProductPresentationModel.swift */; };
@@ -201,12 +201,12 @@
 		0B894E642C5B8BD200542E3B /* n11-cloneAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "n11-cloneAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B894E682C5B8BD200542E3B /* n11_cloneAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = n11_cloneAppUITests.swift; sourceTree = "<group>"; };
 		0B894E6A2C5B8BD200542E3B /* n11_cloneAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = n11_cloneAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0B8BE1632C9C57CA00EF821A /* HomeModuleConceptImageHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleConceptImageHeaderReusableView.swift; sourceTree = "<group>"; };
 		0B9BB20D2C89A2F1001F5FB2 /* Label+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Padding.swift"; sourceTree = "<group>"; };
 		0B9BB2122C89DF77001F5FB2 /* MapViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewManager.swift; sourceTree = "<group>"; };
 		0B9BB2142C89FB6E001F5FB2 /* ShortcutViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutViewContainer.swift; sourceTree = "<group>"; };
 		0BA438522C668A2300486E41 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		0BA438542C67782500486E41 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
-		0BA4386D2C68D86000486E41 /* HomeModuleConceptImageHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleConceptImageHeaderReusableView.swift; sourceTree = "<group>"; };
 		0BA438752C692B1800486E41 /* HomeModuleConceptBottomBrandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleConceptBottomBrandCell.swift; sourceTree = "<group>"; };
 		0BABE6352C903B7D00B746D2 /* FirestoreNetworkFavourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreNetworkFavourites.swift; sourceTree = "<group>"; };
 		0BABE6382C903BB400B746D2 /* FavouritesProductPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesProductPresentationModel.swift; sourceTree = "<group>"; };
@@ -638,6 +638,14 @@
 			path = "n11-cloneAppUITests";
 			sourceTree = "<group>";
 		};
+		0B8BE1622C9C57BA00EF821A /* HomeModuleConceptImageHeaderReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				0B8BE1632C9C57CA00EF821A /* HomeModuleConceptImageHeaderReusableView.swift */,
+			);
+			path = HomeModuleConceptImageHeaderReusableView;
+			sourceTree = "<group>";
+		};
 		0B9BB2112C89DF6D001F5FB2 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -661,15 +669,6 @@
 				0BA438522C668A2300486E41 /* BottomView.swift */,
 			);
 			path = PDPBottomView;
-			sourceTree = "<group>";
-		};
-		0BA4386B2C68D80F00486E41 /* HomeModuleConceptImageHeaderReusableView */ = {
-			isa = PBXGroup;
-			children = (
-				0BA4386D2C68D86000486E41 /* HomeModuleConceptImageHeaderReusableView.swift */,
-			);
-			name = HomeModuleConceptImageHeaderReusableView;
-			path = "HomeModuleConceptImageHeaderReusablevİEW";
 			sourceTree = "<group>";
 		};
 		0BA438742C692AEE00486E41 /* HomeModuleConceptBottomBrandCell */ = {
@@ -1003,13 +1002,13 @@
 		0BFF39302C5D0D6300C3396D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				0B8BE1622C9C57BA00EF821A /* HomeModuleConceptImageHeaderReusableView */,
 				0BFF394B2C5D8EDD00C3396D /* HomeModuleShortcutBoxCell */,
 				0BFF396C2C5FE60100C3396D /* HomeModuleAutoCarouselCell */,
 				0BFF39822C60C92C00C3396D /* HomeModuleManuelCarouselCell */,
 				0BC9CA662C72342200A5C247 /* HomeModuleProductCardCell */,
 				0BA438742C692AEE00486E41 /* HomeModuleConceptBottomBrandCell */,
 				0BFF39342C5D0E3D00C3396D /* HomeModuleProductCardTimerHeaderReusableView */,
-				0BA4386B2C68D80F00486E41 /* HomeModuleConceptImageHeaderReusableView */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1267,12 +1266,12 @@
 				0BC15DE02C8F421A0052315A /* BasketModuleContracts.swift in Sources */,
 				0B67B2B02C60E8360059B7BE /* CategoryCollectionViewCell.swift in Sources */,
 				0BABE63C2C909D9F00B746D2 /* FavouritesLayoutManager.swift in Sources */,
-				0BA4386E2C68D86000486E41 /* HomeModuleConceptImageHeaderReusableView.swift in Sources */,
 				0BC15DCF2C8B1F8C0052315A /* AddressViewController.swift in Sources */,
 				0BAD77F12C69581D00C31CB3 /* FormViewController.swift in Sources */,
 				0B894E482C5B8BD200542E3B /* AppDelegate.swift in Sources */,
 				0B9BB2132C89DF77001F5FB2 /* MapViewManager.swift in Sources */,
 				0BABE6392C903BB400B746D2 /* FavouritesProductPresentationModel.swift in Sources */,
+				0B8BE1642C9C57CA00EF821A /* HomeModuleConceptImageHeaderReusableView.swift in Sources */,
 				0BFF39662C5D9BEB00C3396D /* HomeModuleLayoutMaker.swift in Sources */,
 				0B40DC642C987F640076C4A3 /* FavouritesContract.swift in Sources */,
 				0BCED2B92C80C0490061AFC9 /* SavedProductCardPresentationModel.swift in Sources */,
