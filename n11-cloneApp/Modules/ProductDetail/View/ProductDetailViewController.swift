@@ -2,6 +2,7 @@ import UIKit
 import FirebaseAuth
 
 class ProductDetailViewController: UIViewController, UIGestureRecognizerDelegate, UICollectionViewDelegate, ProductDetailPageProtocol{
+
     private var dataSource: UICollectionViewDiffableDataSource<
         Int, String
     >!
@@ -34,6 +35,7 @@ class ProductDetailViewController: UIViewController, UIGestureRecognizerDelegate
         setupBottomView()
         buildCollectionView()
         setupBackToRootButton()
+        setupNavigationItems()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -93,6 +95,8 @@ class ProductDetailViewController: UIViewController, UIGestureRecognizerDelegate
     func fetchFavouriteStatus() {
         presenter?.requestForFavouriteStatusInformation()
     }
+
+
 
     @objc func rightButtonTapped() {
         self.bottomView.basketButton.imageView?.alpha = 0.4
@@ -359,7 +363,6 @@ class ProductDetailViewController: UIViewController, UIGestureRecognizerDelegate
         ("cart", #selector(shoppingTapped))
     ]
 
-
     private func updateActionButtons(statusDict: [String: Bool]) {
         for (index, info) in self.actionButtonsInfo.enumerated() {
             var systemName = info.systemName
@@ -488,6 +491,15 @@ class ProductDetailViewController: UIViewController, UIGestureRecognizerDelegate
 
     @objc private func clickToFavouriteProduct() {
         presenter?.requestForAddToFavourites()
+    }
+
+    @objc private func clickToNavigateFormVC() {
+        let formVC = FormViewController()
+        tabBarController?.selectedIndex = 4
+
+        UIView.animate(withDuration: 0.2) {
+            self.present(formVC, animated: true)
+        }
     }
 
     func updateActionButtonForFavouriteButton() {

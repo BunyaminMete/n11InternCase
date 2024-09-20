@@ -2,6 +2,7 @@ import UIKit
 import FirebaseAuth
 
 class ProductDetailPresenter: ProductDetailPresenterProtocol {
+
     weak var view: ProductDetailPageProtocol?
     var interactor: ProductDetailInteractorProtocol!
     var builder: PDPBuilder?

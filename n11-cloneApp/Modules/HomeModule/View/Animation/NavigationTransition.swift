@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 // MARK: -- ImageTransitionAnimator
 class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 
@@ -50,16 +49,14 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 
         UIView.animate(withDuration: duration, animations: {
             snapshot.frame = self.isPresenting ? self.targetFrame : self.originFrame
-            fromView.alpha = self.isPresenting ? 1 : 1
-            toView.alpha = self.isPresenting ? 1 : 1
+            toView.alpha = 1
         }, completion: { _ in
+            fromView.alpha = 1 // fromView'ı tekrar görünür hale getiriyoruz.
             snapshot.removeFromSuperview()
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         })
     }
 }
-
-
 
 // MARK: -- CustomNavigationControllerDelegate
 class CustomNavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
@@ -79,8 +76,7 @@ class CustomNavigationControllerDelegate: NSObject, UINavigationControllerDelega
         if isBasket {
             return nil
         }
-        
-        // Eğer image yoksa animasyonu başlatma
+
         guard let image = image else { return nil }
         
         let isPresenting = (operation == .push)
@@ -94,4 +90,3 @@ class CustomNavigationControllerDelegate: NSObject, UINavigationControllerDelega
         )
     }
 }
-

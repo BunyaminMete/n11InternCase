@@ -16,7 +16,6 @@ class ProductDetailMiniFeaturesCollectionViewCell: UICollectionViewCell {
         return view
     }()
     
-    
     let topLabel: UILabel = {
         let label = UILabel()
         label.text = "Üst Label"
@@ -139,7 +138,6 @@ class ProductDetailMiniFeaturesCollectionViewCell: UICollectionViewCell {
             detailLabel.trailingAnchor.constraint(equalTo: box.layoutMarginsGuide.trailingAnchor),
             detailLabel.bottomAnchor.constraint(equalTo: box.layoutMarginsGuide.bottomAnchor),
         ])
-        
         return box
     }
     
@@ -184,12 +182,16 @@ class ProductDetailMiniFeaturesCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupViews()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.setupViews()
+        }
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setupViews()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.setupViews()
+        }
     }
     
     func configureMiniFeaturesCell(with featureText: String, withStar: Bool) {
